@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 
 class ProductCategoryRow extends React.Component {
   render() {
@@ -108,5 +109,9 @@ ReactDOM.render(
   <FilterableProductTable products2 = {PRODUCTS} />,
   document.getElementById('react-app-root')
 );
+
+App.propTypes = {
+  category: PropTypes.string.isRequired
+}
 
 export default App;
