@@ -20,7 +20,7 @@ class ProductRow extends React.Component {
     const product = this.props.product;
     const name = product.stocked ?
       product.name :
-      <span style={{color: 'red'}}>
+      <span style={{color: 'blue'}}>
         {product.name}
       </span>;
 
@@ -84,7 +84,7 @@ class SearchBar extends React.Component {
   }
 }
 
-class FilterableProductTable extends React.Component {
+class FilterableProductTables extends React.Component {
   render() {
     return (
       <div>
@@ -94,6 +94,17 @@ class FilterableProductTable extends React.Component {
     );
   }
 }
+//--------------------------------------------------------this done
+// class Document_Root extends React.Component {
+//   render() {
+//     return(
+//       <div>
+//         <IntroBar />
+//         <StoryTable api={this.props.api}/>
+//       </div>
+//     );
+//   }
+// }
 
 // const API_MOCKUP = [
 //   {artist: '50 Cent', lyric: 'Go shorty it\'s your birday', pic: '1.jpg'},
@@ -101,14 +112,14 @@ class FilterableProductTable extends React.Component {
 //   {artist: 'Taylor Swift', lyric: 'You be the prince and I will be the princess baby just say yes', pic: '3.jpg'},
 //   {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'}
 // ];
-const PRODUCTS = [
-  {category: 'Sporting Goods', price: '$59.99', stocked: true, name: 'Football'},
-  {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
-  {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
-  {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
-  {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
-  {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
-];
+// const PRODUCTS = [
+//   {category: 'Sporting Goods', price: '$59.99', stocked: true, name: 'Football'},
+//   {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
+//   {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+//   {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+//   {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+//   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+// ];
 
 // Document_Root
 // IntroBar
@@ -119,18 +130,19 @@ const PRODUCTS = [
 
 
 
-ReactDOM.render(
-  <FilterableProductTable products2 = {PRODUCTS} />,
-  document.getElementById('react-app-root')
-);
+// ReactDOM.render(
+//   <FilterableProductTables products2 = {PRODUCTS} />,
+//   document.getElementById('react-app-root')
+// );
 
 // ReactDOM.render(
 //   <Document_Root api={API_MOCKUP}/>,
 //   document.getElementById('react-app-root')
 // );
 
-App.propTypes = {
-  category: PropTypes.string.isRequired
-}
+// App.propTypes = {
+//   //what is happening to this?
+//   artist: PropTypes.string.isRequired
+// }
 
-export default App;
+export default FilterableProductTables;
