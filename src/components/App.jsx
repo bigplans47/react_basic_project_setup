@@ -95,7 +95,12 @@ class FilterableProductTable extends React.Component {
   }
 }
 
-
+// const API_MOCKUP = [
+//   {artist: '50 Cent', lyric: 'Go shorty it\'s your birday', pic: '1.jpg'},
+//   {artist: 'Muse', lyric: 'Hold you in my arms, I just wanted to hold', pic: '2.jpg'},
+//   {artist: 'Taylor Swift', lyric: 'You be the prince and I will be the princess baby just say yes', pic: '3.jpg'},
+//   {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'}
+// ];
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$59.99', stocked: true, name: 'Football'},
   {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
@@ -105,10 +110,24 @@ const PRODUCTS = [
   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
 
+// Document_Root
+// IntroBar
+// SectionsCell
+// UserCell
+// StoryTable
+// StoryCell
+
+
+
 ReactDOM.render(
   <FilterableProductTable products2 = {PRODUCTS} />,
   document.getElementById('react-app-root')
 );
+
+// ReactDOM.render(
+//   <Document_Root api={API_MOCKUP}/>,
+//   document.getElementById('react-app-root')
+// );
 
 App.propTypes = {
   category: PropTypes.string.isRequired
