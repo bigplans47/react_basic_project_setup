@@ -2,36 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
-// class ProductCategoryRow extends React.Component {
-//   render() {
-//     const category = this.props.category;
-//     return (
-//       <tr>
-//         <th colSpan="2">
-//           {category}
-//         </th>
-//       </tr>
-//     );
-//   }
-// }
-//
-
-//
-// class SearchBar extends React.Component {
-//   render() {
-//     return (
-//       <form>
-//         <input type="text" placeholder="Search..." />
-//         <p>
-//           <input type="checkbox" />
-//           {' '}
-//           Only show products in stock
-//         </p>
-//       </form>
-//     );
-//   }
-// }
-
 // class FilterableProductTables extends React.Component {
 //   render() {
 //     return (
@@ -54,55 +24,6 @@ class Document_Root extends React.Component {
   }
 }
 
-class StoryTable extends React.Component {
-  render() {
-    const array = [];
-    this.props.api.forEach((element) => {
-      array.push(
-        <StoryCell element={element} />
-      );
-    });
-    return(
-      <div>
-        {array}
-      </div>
-    );
-  }
-}
-
-class StoryCell extends React.Component {
-  render() {
-    const array = [2];
-    // const all = this.props.api;
-
-    return(
-
-      // createFragment(all)
-      // this.props.products3.forEach((product) => {
-      //       if (product.category !== lastCategory)
-      <p>{this.props.element.artist}</p>
-    );
-  }
-}
-
-// class ProductRow extends React.Component {
-//   render() {
-//     const product = this.props.product;
-//     const name = product.stocked ?
-//       product.name :
-//       <span style={{color: 'blue'}}>
-//         {product.name}
-//       </span>;
-//
-// return (
-//       <tr>
-//         <td>{name}</td>
-//         <td>{product.price}</td>
-//       </tr>
-//     );
-//   }
-// }
-//
 // class ProductTable extends React.Component {
 //   render() {
 //     const rows = [];
@@ -138,21 +59,49 @@ class StoryCell extends React.Component {
 //     );
 //   }
 // }
+//-------------------------------------------
+class StoryTable extends React.Component {
+  render() {
+    const array = [];
+    this.props.api.forEach((element) => {
+      array.push(
+        <StoryCell element={element} />
+      );
+    });
+    return(
+      <div>
+        {array}
+      </div>
+    );
+  }
+}
 
-// const API_MOCKUP = [
-//   {artist: '50 Cent', lyric: 'Go shorty it\'s your birday', pic: '1.jpg'},
-//   {artist: 'Muse', lyric: 'Hold you in my arms, I just wanted to hold', pic: '2.jpg'},
-//   {artist: 'Taylor Swift', lyric: 'You be the prince and I will be the princess baby just say yes', pic: '3.jpg'},
-//   {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'}
-// ];
-// const PRODUCTS = [
-//   {category: 'Sporting Goods', price: '$59.99', stocked: true, name: 'Football'},
-//   {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
-//   {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
-//   {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
-//   {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
-//   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
-// ];
+// class ProductRow extends React.Component {
+//   render() {
+//     const product = this.props.product;
+//     const name = product.stocked ?
+//       product.name :
+//       <span style={{color: 'blue'}}>
+//         {product.name}
+//       </span>;
+//
+// return (
+//       <tr>
+//         <td>{name}</td>
+//         <td>{product.price}</td>
+//       </tr>
+//     );
+//   }
+// }
+//-----------------------------------------
+class StoryCell extends React.Component {
+  render() {
+
+    return(
+      <p>{this.props.element.artist}</p>
+    );
+  }
+}
 
 // Document_Root
 // IntroBar
@@ -161,21 +110,38 @@ class StoryCell extends React.Component {
 // StoryTable
 // StoryCell
 
+// class ProductCategoryRow extends React.Component {
+//   render() {
+//     const category = this.props.category;
+//     return (
+//       <tr>
+//         <th colSpan="2">
+//           {category}
+//         </th>
+//       </tr>
+//     );
+//   }
+// }
+//
+//
+// class SearchBar extends React.Component {
+//   render() {
+//     return (
+//       <form>
+//         <input type="text" placeholder="Search..." />
+//         <p>
+//           <input type="checkbox" />
+//           {' '}
+//           Only show products in stock
+//         </p>
+//       </form>
+//     );
+//   }
+// }
 
-
-// ReactDOM.render(
-//   <FilterableProductTables products2 = {PRODUCTS} />,
-//   document.getElementById('react-app-root')
-// );
-
-// ReactDOM.render(
-//   <Document_Root api={API_MOCKUP}/>,
-//   document.getElementById('react-app-root')
-// );
-
-// App.propTypes = {
+// StoryTable.propTypes = {
 //   //what is happening to this?
-//   artist: PropTypes.string.isRequired
+//   artist: PropTypes.string
 // }
 export default Document_Root;
 // export default FilterableProductTables;
