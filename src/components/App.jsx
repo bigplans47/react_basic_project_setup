@@ -149,29 +149,85 @@ class StoryCell extends React.Component {
 
 class IntroBar extends React.Component {
   render () {
-    let myStyles = {
-      backgroundColor: "#00CED1",
+    let myStyles2 = {
+      width: '800px',
+      backgroundColor: "transparent",
       fontFamily: "arial",
       backgroundImage: 'url(https://www.smartt.com/sites/default/files/public/twitter_logo_banner_12.jpg)',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center center',
       backgroundAttachment: 'fixed',
-      backgroundSize: 'cover'
-
+      backgroundSize: 'contain',
+      borderRadius: '3px',
+      borderColor: 'red',
+      borderWidth: '5px',
+      position: 'fixed',
+      border: '3px solid black',
+      margin: 'auto'
 
     }
+    let button1Style = {
+      position: 'absolute',
+      right: '70px',
+      border: '1px solid white',
+      backgroundColor: 'transparent',
+      top: '30px',
+      color: 'white',
+      // position: 'relative',
+      // width: '400px',
+      // height: '200px',
+    }
+    let button2Style = {
+      position: 'absolute',
+      right: '10px',
+      border: '1px solid white',
+      backgroundColor: 'transparent',
+      top: '30px',
+      color: 'white',
+      // position: 'relative',
+      // width: '400px',
+      // height: '200px',
+    }
+    let bird = {
+      height: '100px',
+      width: '100px',
+      backgroundImage : 'url(https://d21tktytfo9riy.cloudfront.net/wp-content/uploads/2016/02/30124036/chuck-highlight-image.png)',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '70% 70%',
+      backgroundColor: 'transparent',
+      border: 'transparent',
+      position: 'relative',
+      top: '20px',
+      position: 'absolute',
+
+    }
+
+    let header1 = {
+      color: 'white',
+      textAlign: 'center',
+    }
+
     return (
-      <div style={myStyles} class="topnav" id="myTopnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
+      <div style={myStyles2} class="topnav" id="myTopnav">
+        <button type="button" style={button1Style}>Signup</button>
+        <button type="button" style={button2Style}>Login</button>
+        <button style={bird}></button>
+        <br/>
+        <h1 style={header1}>What's happening?</h1>
+        <a class="active" href="#home">Home </a>
+        <a href="#news">News2</a>
         <a href="#contact">Contact</a>
         <a href="about">About</a>
-        <h1>Hey, I'm a component</h1>
+
         <h2>But there's something different about me...</h2>
-        <h3>Unlike other components you've worked with thus far....</h3>
+        {/* <h3>Unlike other components you've worked with thus far....</h3>
         <h4>I also include custom CSS styles!</h4>
         <p>Pretty cool, right</p>
         <p>yo</p>
+        <p>yo</p>
+        <p>yo</p>
+        <p>yo</p>
+        <p>yo</p> */}
       </div>
     )
 
