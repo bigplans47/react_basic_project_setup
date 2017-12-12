@@ -17,7 +17,7 @@ class Document_Root extends React.Component {
   render() {
     return(
       <div>
-
+        <IntroBar/>
         <StoryTable api={this.props.api}/>
       </div>
     );
@@ -63,16 +63,21 @@ class Document_Root extends React.Component {
 class StoryTable extends React.Component {
   render() {
     const array = [];
-    this.props.api.forEach((element) => {
+    this.props.api.forEach((element, i) => {
       array.push(
-        <StoryCell element={element} />
+        <StoryCell element={element} key={i} />
       );
     });
+    console.log(array)
     return(
-      <div>
-        {array}
-      </div>
+      <table>
+        <tbody>
+          {array}
+        </tbody>
+      </table>
     );
+
+
   }
 }
 
@@ -98,7 +103,10 @@ class StoryCell extends React.Component {
   render() {
 
     return(
-      <p>{this.props.element.artist}</p>
+
+        <tr>
+          <th>{this.props.element.artist}</th>
+        </tr>
     );
   }
 }
@@ -138,6 +146,38 @@ class StoryCell extends React.Component {
 //     );
 //   }
 // }
+
+class IntroBar extends React.Component {
+  render () {
+    let myStyles = {
+      backgroundColor: "#00CED1",
+      fontFamily: "arial",
+      backgroundImage: 'url(https://www.smartt.com/sites/default/files/public/twitter_logo_banner_12.jpg)',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center center',
+      backgroundAttachment: 'fixed',
+      backgroundSize: 'cover'
+
+
+    }
+    return (
+      <div style={myStyles} class="topnav" id="myTopnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="about">About</a>
+        <h1>Hey, I'm a component</h1>
+        <h2>But there's something different about me...</h2>
+        <h3>Unlike other components you've worked with thus far....</h3>
+        <h4>I also include custom CSS styles!</h4>
+        <p>Pretty cool, right</p>
+        <p>yo</p>
+      </div>
+    )
+
+  }
+
+}
 
 // StoryTable.propTypes = {
 //   //what is happening to this?
