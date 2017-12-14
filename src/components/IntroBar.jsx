@@ -11,14 +11,14 @@ class IntroBar extends React.Component {
       fontFamily: "arial",
       backgroundImage: 'url(http://ag.fvsu.edu/files/9614/4354/3803/TwitterLogo_55acee.png)',
       backgroundRepeat: 'no-repeat',
-      backgroundPosition: '112% 110%',
-      backgroundSize: '60% 110%',
-      // borderRadius: '3px',
+      backgroundPosition: '290% 0%',
+      backgroundSize: '90% 150%',
+      borderRadius: '3px',
       borderColor: 'red',
       // borderWidth: '5px',
       border: '3px solid black',
       marginRight: 'auto',
-      display: 'flex',
+      // display: 'flex',
       flexDirection: 'column',
       // border: 'none',
       padding: '0px',
@@ -28,7 +28,7 @@ class IntroBar extends React.Component {
     let button1Style = {
       position: 'absolute',
       right: '110px',
-      border: '1px solid white',
+      border: '2px solid white',
       backgroundColor: 'transparent',
       top: '30px',
       color: 'white',
@@ -39,7 +39,7 @@ class IntroBar extends React.Component {
     let button2Style = {
       position: 'absolute',
       right: '30px',
-      border: '1px solid white',
+      border: '2px solid white',
       backgroundColor: 'transparent',
       top: '30px',
       color: 'white',
@@ -67,6 +67,8 @@ class IntroBar extends React.Component {
     }
 
     let navstyle1 = {
+      height: '100px',
+      width: '100px',
       backgroundAttachment: 'fixed',
       display: 'block',
       fontFamily: 'serif bold',
@@ -76,7 +78,14 @@ class IntroBar extends React.Component {
       border: '1px solid #d3d3d3',
       fontSize: '18px',
       color: 'black',
-      backgroundImage : 'url(https://sonicrunway.herokuapp.com/img/icons/twitter-logo-white-transparent.png)',
+      background : 'url(https://image.flaticon.com/icons/png/128/49/49116.png)',
+      fontFamily: "edgeicons",
+      backgroundColor: 'white',
+      backgroundSize: '30% 60%',
+      color: 'transparent',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '50% 50%',
+      // display: 'inline-flex',
     }
     let navstyle = {
       backgroundAttachment: 'fixed',
@@ -92,7 +101,7 @@ class IntroBar extends React.Component {
 
     let navBar = {
       backgroundColor: 'white',
-      // marginTop: '300px'
+      // width: '500px'
     }
 
     let linkedIn = {
@@ -118,6 +127,7 @@ class IntroBar extends React.Component {
           <br/>
           <h1 style={header1}>What's happening?</h1>
         </div>
+
         <div style={navBar}>
           <ul>
             <a style={navstyle1} href="search" >Search</a>
@@ -130,9 +140,11 @@ class IntroBar extends React.Component {
             <a style={navstyle} href="more">More</a>
           </ul>
         </div>
+
         <div>
           <a style={linkedIn} href="https://www.linkedin.com/in/dan-kiss-learn-this/" >_Click for Developer Info</a>
         </div>
+
       </div>
     )
 
