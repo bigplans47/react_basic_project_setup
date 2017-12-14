@@ -3,26 +3,26 @@ import ReactDOM from "react-dom";
 
 class IntroBar extends React.Component {
   render () {
-    let myStyles2 = {
-      // backgroundColor: "#1DA1F3",
+
+    let mainContainer = {
+      backgroundColor: "#1DA1F3",
+      // backgroundColor: "green",
       height: '200px',
-      backgroundColor: "green",
       fontFamily: "arial",
       backgroundImage: 'url(http://ag.fvsu.edu/files/9614/4354/3803/TwitterLogo_55acee.png)',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '112% 110%',
-      // backgroundAttachment: 'fixed',
-      backgroundSize: '60% 120%',
+      backgroundSize: '60% 110%',
       // borderRadius: '3px',
       borderColor: 'red',
-      borderWidth: '5px',
+      // borderWidth: '5px',
       border: '3px solid black',
       marginRight: 'auto',
       display: 'flex',
       flexDirection: 'column',
       // border: 'none',
+      padding: '0px',
       margin: '0px',
-      padding: '0',
 
     }
     let button1Style = {
@@ -50,12 +50,11 @@ class IntroBar extends React.Component {
     let bird = {
       height: '100px',
       width: '100px',
-      backgroundImage : 'url(http://www.worldawesomeplaces.com/img/twitter-wrap.png)',
+      backgroundImage : 'url(https://sonicrunway.herokuapp.com/img/icons/twitter-logo-white-transparent.png)',
       backgroundRepeat: 'no-repeat',
-      backgroundSize: '70% 70%',
+      backgroundSize: '40% 30%',
       backgroundColor: 'transparent',
       border: 'transparent',
-      position: 'relative',
       top: '30px',
       left: '30px',
       position: 'absolute'
@@ -67,34 +66,61 @@ class IntroBar extends React.Component {
       fontSize: '48px'
     }
 
-    let navstyle = {
+    let navstyle1 = {
       backgroundAttachment: 'fixed',
       display: 'block',
-      // position: 'absolute',
+      fontFamily: 'serif bold',
       display: 'inline',
       backgroundColor: 'white',
       padding: '14px 16px',
-      margin: '1px',
-      border: '1px solid red',
+      border: '1px solid #d3d3d3',
+      fontSize: '18px',
+      color: 'black',
+      backgroundImage : 'url(https://sonicrunway.herokuapp.com/img/icons/twitter-logo-white-transparent.png)',
+    }
+    let navstyle = {
+      backgroundAttachment: 'fixed',
+      display: 'block',
+      fontFamily: 'serif bold',
+      display: 'inline',
+      backgroundColor: 'white',
+      padding: '14px 16px',
+      border: '1px solid #d3d3d3',
       fontSize: '18px',
       color: 'black',
     }
 
-    let div2 = {
+    let navBar = {
       backgroundColor: 'white',
       // marginTop: '300px'
     }
 
+    let linkedIn = {
+      position: 'fixed',
+      bottom: '0',
+      right: '0',
+      height: '200px',
+      width: '250px',
+      borderRadius: '10px',
+      border: '3px solid black',
+      backgroundImage : 'url(https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAIABADGAAAAAQAAAAAAAApRAAAAJGE3ODk5YWIyLTcyZDUtNDY1OC1hYzQxLThmNmFhMDEzY2E5NA.jpg)',
+      backgroundColor: "#1DA1F3",
+      color: 'black',
+      backgroundPosition: '10% 10%'
+    }
+
     return (
-      <div style={myStyles2} >
-        <button type="button" style={button1Style}>Signup</button>
-        <button type="button" style={button2Style}>Login</button>
-        <button style={bird}></button>
-        <br/>
-        <h1 style={header1}>What's happening?</h1>
-        <div style={div2}>
+      <div>
+        <div style={mainContainer} >
+          <button type="button" style={button1Style}>Signup</button>
+          <button type="button" style={button2Style}>Login</button>
+          <button style={bird}></button>
+          <br/>
+          <h1 style={header1}>What's happening?</h1>
+        </div>
+        <div style={navBar}>
           <ul>
-            <a style={navstyle} href="search" >Search</a>
+            <a style={navstyle1} href="search" >Search</a>
             <a style={navstyle} href="featured">Featured</a>
             <a style={navstyle} href="sports">Sports</a>
             <a style={navstyle} href="news">News</a>
@@ -103,6 +129,9 @@ class IntroBar extends React.Component {
             <a style={navstyle} href="lifestyle">Lifestyle</a>
             <a style={navstyle} href="more">More</a>
           </ul>
+        </div>
+        <div>
+          <a style={linkedIn} href="https://www.linkedin.com/in/dan-kiss-learn-this/" >_Click for Developer Info</a>
         </div>
       </div>
     )
