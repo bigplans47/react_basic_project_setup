@@ -4,21 +4,23 @@ import ReactDOM from "react-dom";
 class IntroBar extends React.Component {
   render () {
     let myStyles2 = {
-      width: '800px',
+      width: '70%',
       backgroundColor: "transparent",
       fontFamily: "arial",
       // backgroundColor: "#55ACEF",
       backgroundImage: 'url(https://www.smartt.com/sites/default/files/public/twitter_logo_banner_12.jpg)',
       backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center center',
-      backgroundAttachment: 'fixed',
+      // backgroundPosition: 'center center',
+      // backgroundAttachment: 'fixed',
       backgroundSize: 'contain',
       borderRadius: '3px',
       borderColor: 'red',
       borderWidth: '5px',
-      position: 'fixed',
+      // position: 'fixed',
       border: '3px solid black',
-      margin: 'auto'
+      marginRight: 'auto',
+      display: 'flex',
+      flexDirection: 'column'
     }
     let button1Style = {
       position: 'absolute',
@@ -46,7 +48,7 @@ class IntroBar extends React.Component {
       border: 'transparent',
       position: 'relative',
       top: '20px',
-      position: 'absolute',
+      position: 'absolute'
     }
 
     let header1 = {
@@ -60,13 +62,13 @@ class IntroBar extends React.Component {
       display: 'inline',
       backgroundColor: 'white',
       padding: '14px 16px',
-      border: '1px solid red',
+      border: '1px solid red'
     }
 
     let div2 = {
       backgroundColor: 'white',
       padding: '1px',
-
+      marginTop: '300px'
     }
 
     return (
