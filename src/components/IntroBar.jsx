@@ -4,18 +4,18 @@ import ReactDOM from "react-dom";
 class IntroBar extends React.Component {
   render () {
     let myStyles2 = {
-      backgroundColor: "#1DA1F3",
-      // backgroundColor: "transparent",
+      // backgroundColor: "#1DA1F3",
+      height: '200px',
+      backgroundColor: "green",
       fontFamily: "arial",
       backgroundImage: 'url(http://ag.fvsu.edu/files/9614/4354/3803/TwitterLogo_55acee.png)',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '112% 110%',
-      backgroundAttachment: 'fixed',
+      // backgroundAttachment: 'fixed',
       backgroundSize: '60% 120%',
       // borderRadius: '3px',
       borderColor: 'red',
       borderWidth: '5px',
-      // position: 'fixed',
       border: '3px solid black',
       marginRight: 'auto',
       display: 'flex',
@@ -23,7 +23,7 @@ class IntroBar extends React.Component {
       // border: 'none',
       margin: '0px',
       padding: '0',
-      verticalAlign: 'baseline',
+
     }
     let button1Style = {
       position: 'absolute',
@@ -68,11 +68,13 @@ class IntroBar extends React.Component {
     }
 
     let navstyle = {
+      backgroundAttachment: 'fixed',
       display: 'block',
-      position: 'sticky',
+      // position: 'absolute',
       display: 'inline',
       backgroundColor: 'white',
       padding: '14px 16px',
+      margin: '1px',
       border: '1px solid red',
       fontSize: '18px',
       color: 'black',
@@ -80,7 +82,7 @@ class IntroBar extends React.Component {
 
     let div2 = {
       backgroundColor: 'white',
-      marginTop: '300px'
+      // marginTop: '300px'
     }
 
     return (
@@ -102,11 +104,6 @@ class IntroBar extends React.Component {
             <a style={navstyle} href="more">More</a>
           </ul>
         </div>
-        <p>Overview. This document described the process involved with configuring Windows 7 to print to a Zebra Label Printer using a. Generic / Text Only driver. Using a Generic / Text Only driver enables the application to send printer control code languages such as ZPL and CPCL. This example guides the reader through adding.
-        Overview. This document described the process involved with configuring Windows 7 to  print to a Zebra Label Printer using a. Generic / Text Only driver. Using as Generic   / Text Only driver enables the application to send printer control code languages   such as ZPL and CPCL. This example guides the reader through adding Overview. This document described the process involved with configuring Windows 7 to print to a Zebra Label Printer using a. Generic / Text Only driver. Using a Generic / Text Only driver enables the application to send printer control code languages such as ZPL and CPCL. This example guides the reader through adding.
-        Overview. This document described the process involved with configuring Windows 7 to  print to a Zebra Label Printer using a. Generic / Text Only driver. Using as Generic   / Text Only driver enables the application to send printer control code languages   such as ZPL and CPCL. This example guides the reader through adding Overview. This document described the process involved with configuring Windows 7 to print to a Zebra Label Printer using a. Generic / Text Only driver. Using a Generic / Text Only driver enables the application to send printer control code languages such as ZPL and CPCL. This example guides the reader through adding.
-        Overview. This document described the process involved with configuring Windows 7 to  print to a Zebra Label Printer using a. Generic / Text Only driver. Using as Generic   / Text Only driver enables the application to send printer control code languages   such as ZPL and CPCL. This example guides the reader through adding Overview. This document described the process involved with configuring Windows 7 to print to a Zebra Label Printer using a. Generic / Text Only driver. Using a Generic / Text Only driver enables the application to send printer control code languages such as ZPL and CPCL. This example guides the reader through adding.
-        Overview. This document described the process involved with configuring Windows 7 to  print to a Zebra Label Printer using a. Generic / Text Only driver. Using as Generic  </p>
       </div>
     )
 

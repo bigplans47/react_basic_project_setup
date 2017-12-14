@@ -8,7 +8,31 @@ const API_MOCKUP = [
   {artist: '50 Cent', lyric: 'Go shorty it\'s your birday', pic: '1.jpg'},
   {artist: 'Muse', lyric: 'Hold you in my arms, I just wanted to hold', pic: '2.jpg'},
   {artist: 'Taylor Swift', lyric: 'You be the prince and I will be the princess baby just say yes', pic: '3.jpg'},
-  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'}
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  {artist: 'Kanye', lyric: 'Yeezy taught me', pic: '4.jpg'},
+  
 ];
 
 const render = (Component) => {
