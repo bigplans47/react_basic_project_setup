@@ -4,56 +4,67 @@ import ReactDOM from "react-dom";
 class IntroBar extends React.Component {
   render () {
     let myStyles2 = {
-      width: '70%',
-      backgroundColor: "transparent",
+      backgroundColor: "#1DA1F3",
+      // backgroundColor: "transparent",
       fontFamily: "arial",
-      // backgroundColor: "#55ACEF",
-      backgroundImage: 'url(https://www.smartt.com/sites/default/files/public/twitter_logo_banner_12.jpg)',
+      backgroundImage: 'url(http://ag.fvsu.edu/files/9614/4354/3803/TwitterLogo_55acee.png)',
       backgroundRepeat: 'no-repeat',
-      // backgroundPosition: 'center center',
-      // backgroundAttachment: 'fixed',
-      backgroundSize: 'contain',
-      borderRadius: '3px',
+      backgroundPosition: '112% 110%',
+      backgroundAttachment: 'fixed',
+      backgroundSize: '60% 120%',
+      // borderRadius: '3px',
       borderColor: 'red',
       borderWidth: '5px',
       // position: 'fixed',
       border: '3px solid black',
       marginRight: 'auto',
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      // border: 'none',
+      margin: '0px',
+      padding: '0',
+      verticalAlign: 'baseline',
     }
     let button1Style = {
       position: 'absolute',
-      right: '70px',
+      right: '110px',
       border: '1px solid white',
       backgroundColor: 'transparent',
       top: '30px',
       color: 'white',
+      fontSize: '14px',
+      borderRadius: '100px',
+      padding: '6px 16px',
     }
     let button2Style = {
       position: 'absolute',
-      right: '10px',
+      right: '30px',
       border: '1px solid white',
       backgroundColor: 'transparent',
       top: '30px',
       color: 'white',
+      fontSize: '14px',
+      borderRadius: '100px',
+      padding: '6px 16px',
     }
     let bird = {
       height: '100px',
       width: '100px',
-      backgroundImage : 'url(https://www.smartt.com/sites/default/files/public/twitter_logo_banner_12.jpg)',
+      backgroundImage : 'url(http://www.worldawesomeplaces.com/img/twitter-wrap.png)',
       backgroundRepeat: 'no-repeat',
       backgroundSize: '70% 70%',
       backgroundColor: 'transparent',
       border: 'transparent',
       position: 'relative',
-      top: '20px',
+      top: '30px',
+      left: '30px',
       position: 'absolute'
     }
 
     let header1 = {
       color: 'white',
       textAlign: 'center',
+      fontSize: '48px'
     }
 
     let navstyle = {
@@ -62,12 +73,13 @@ class IntroBar extends React.Component {
       display: 'inline',
       backgroundColor: 'white',
       padding: '14px 16px',
-      border: '1px solid red'
+      border: '1px solid red',
+      fontSize: '18px',
+      color: 'black',
     }
 
     let div2 = {
       backgroundColor: 'white',
-      padding: '1px',
       marginTop: '300px'
     }
 
