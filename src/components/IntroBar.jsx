@@ -9,10 +9,10 @@ class IntroBar extends React.Component {
       // backgroundColor: "green",
       height: '200px',
       fontFamily: "arial",
-      backgroundImage: 'url(http://ag.fvsu.edu/files/9614/4354/3803/TwitterLogo_55acee.png)',
+      backgroundImage: 'url(http://clipart-library.com/img/1427134.png)',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '290% 0%',
-      backgroundSize: '90% 150%',
+      backgroundSize: '84% 170%',
       borderRadius: '3px',
       borderColor: 'red',
       // borderWidth: '5px',
@@ -75,33 +75,38 @@ class IntroBar extends React.Component {
       display: 'inline',
       backgroundColor: 'white',
       padding: '14px 16px',
-      border: '1px solid #d3d3d3',
+      // border: '1px solid #d3d3d3',
       fontSize: '18px',
-      color: 'black',
+      // color: 'black',
       background : 'url(https://image.flaticon.com/icons/png/128/49/49116.png)',
       fontFamily: "edgeicons",
       backgroundColor: 'white',
-      backgroundSize: '30% 60%',
+      backgroundSize: '30% 40%',
       color: 'transparent',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50% 50%',
-      // display: 'inline-flex',
+
     }
     let navstyle = {
       backgroundAttachment: 'fixed',
       display: 'block',
-      fontFamily: 'serif bold',
+      fontFamily: 'Helvetica Neue',
       display: 'inline',
       backgroundColor: 'white',
       padding: '14px 16px',
       border: '1px solid #d3d3d3',
       fontSize: '18px',
+      fontWeight: 'bold',
       color: 'black',
+      textDecoration: 'none',
     }
 
     let navBar = {
       backgroundColor: 'white',
-      // width: '500px'
+      // float: 'left',
+      padding: '15px 0px',
+      margin: '0',
+      width: '100%',
     }
 
     let linkedIn = {
@@ -110,7 +115,7 @@ class IntroBar extends React.Component {
       right: '0',
       height: '200px',
       width: '250px',
-      borderRadius: '10px',
+      borderRadius: '4px',
       border: '3px solid black',
       backgroundImage : 'url(https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAIABADGAAAAAQAAAAAAAApRAAAAJGE3ODk5YWIyLTcyZDUtNDY1OC1hYzQxLThmNmFhMDEzY2E5NA.jpg)',
       backgroundColor: "#1DA1F3",
@@ -129,8 +134,8 @@ class IntroBar extends React.Component {
         </div>
 
         <div style={navBar}>
-          <ul>
-            <a style={navstyle1} href="search" >Search</a>
+
+            <a style={navstyle} href="search" ><div style={navstyle1}>Search</div></a>
             <a style={navstyle} href="featured">Featured</a>
             <a style={navstyle} href="sports">Sports</a>
             <a style={navstyle} href="news">News</a>
@@ -138,12 +143,12 @@ class IntroBar extends React.Component {
             <a style={navstyle} href="entertainment">Entertainment</a>
             <a style={navstyle} href="lifestyle">Lifestyle</a>
             <a style={navstyle} href="more">More</a>
-          </ul>
+
         </div>
 
-        <div>
+        {/* <div>
           <a style={linkedIn} href="https://www.linkedin.com/in/dan-kiss-learn-this/" >_Click for Developer Info</a>
-        </div>
+        </div> */}
 
       </div>
     )
