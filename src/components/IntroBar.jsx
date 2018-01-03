@@ -5,22 +5,19 @@ class IntroBar extends React.Component {
   render () {
 
     let mainContainer = {
-      backgroundColor: "#1DA1F3",
-      // backgroundColor: "green",
+      backgroundColor: '#87CEEB',//"#1DA1F3",
       height: '200px',
       fontFamily: "arial",
-      backgroundImage: 'url(http://clipart-library.com/img/1427134.png)',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: '290% 0%',
-      backgroundSize: '84% 170%',
+      backgroundImage: 'url(https://vignette.wikia.nocookie.net/roblox/images/2/2e/Twitter_Bird.png/revision/latest?cb=20171111141052)',
+      // backgroundRepeat: 'no-repeat',
+      // backgroundPosition: '90% 50%',
+      // backgroundSize: '20% 100%',
       borderRadius: '3px',
       borderColor: 'red',
-      // borderWidth: '5px',
       border: '3px solid black',
       marginRight: 'auto',
       // display: 'flex',
-      flexDirection: 'column',
-      // border: 'none',
+      // flexDirection: 'column',
       padding: '0px',
       margin: '0px',
 
@@ -99,14 +96,21 @@ class IntroBar extends React.Component {
       fontWeight: 'bold',
       color: 'black',
       textDecoration: 'none',
+      flex: 1,
+      // display: 'flex',
+      // flexFlow: 'row wrap',
+      // justifyContent: 'space-around',
+      // flexDirection: 'column',
     }
 
     let navBar = {
-      backgroundColor: 'white',
-      // float: 'left',
-      padding: '15px 0px',
+      backgroundColor: 'green',
+      justifyContent: 'space-evenly',
+      // padding: '15px 0px',
       margin: '0',
-      width: '100%',
+      display: 'flex',
+
+
     }
 
     let linkedIn = {

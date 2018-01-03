@@ -4,12 +4,14 @@ import ReactDOM from "react-dom";
 
 class StoryCell extends React.Component {
   render() {
+    // style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}
 
     return(
-
-        <tr>
-          <th>{this.props.element.artist}</th>
-        </tr>
+      // <table>
+        // <tr>
+          <button style={{width: '30%',}}>{this.props.element.artist+ " "}</button>
+        // </tr>
+      // </table>
 
     );
   }
