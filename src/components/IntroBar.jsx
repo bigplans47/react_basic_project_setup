@@ -8,10 +8,10 @@ class IntroBar extends React.Component {
       backgroundColor: '#87CEEB',//"#1DA1F3",
       height: '200px',
       fontFamily: "arial",
-      backgroundImage: 'url(https://vignette.wikia.nocookie.net/roblox/images/2/2e/Twitter_Bird.png/revision/latest?cb=20171111141052)',
-      // backgroundRepeat: 'no-repeat',
-      // backgroundPosition: '90% 50%',
-      // backgroundSize: '20% 100%',
+      backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1259px-Twitter_Bird.svg.png)',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '130% 15%',
+      backgroundSize: '62% 210%',
       borderRadius: '3px',
       borderColor: 'red',
       border: '3px solid black',
@@ -64,8 +64,7 @@ class IntroBar extends React.Component {
     }
 
     let navstyle1 = {
-      height: '100px',
-      width: '100px',
+      border: '1px solid #d3d3d3',
       backgroundAttachment: 'fixed',
       display: 'block',
       fontFamily: 'serif bold',
@@ -76,7 +75,7 @@ class IntroBar extends React.Component {
       fontSize: '18px',
       // color: 'black',
       background : 'url(https://image.flaticon.com/icons/png/128/49/49116.png)',
-      fontFamily: "edgeicons",
+      // fontFamily: "edgeicons",
       backgroundColor: 'white',
       backgroundSize: '30% 40%',
       color: 'transparent',
@@ -104,7 +103,7 @@ class IntroBar extends React.Component {
     }
 
     let navBar = {
-      backgroundColor: 'green',
+      // backgroundColor: 'green',
       justifyContent: 'space-evenly',
       // padding: '15px 0px',
       margin: '0',
@@ -138,8 +137,7 @@ class IntroBar extends React.Component {
         </div>
 
         <div style={navBar}>
-
-            <a style={navstyle} href="search" ><div style={navstyle1}>Search</div></a>
+            <a style={navstyle1} href="search" >Search</a>
             <a style={navstyle} href="featured">Featured</a>
             <a style={navstyle} href="sports">Sports</a>
             <a style={navstyle} href="news">News</a>

@@ -4,12 +4,23 @@ import ReactDOM from "react-dom";
 
 class StoryCell extends React.Component {
   render() {
+    // var mypic = this.props.element.pic
+    // console.log(mypic)
     // style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}
-
+    let anchorButton = {
+      margin: '10px',
+      width: '30%',
+      height: '200px',
+      display: 'inline-block',
+      background: 'green',
+      borderRadius: '5px',
+      backgroundRepeat: 'no-repeat',
+      backgroundImage: 'url({this.props.element.pic})',
+    }
     return(
       // <table>
         // <tr>
-          <button style={{width: '30%',}}>{this.props.element.artist+ " "}</button>
+          <a style={anchorButton}>{this.props.element.artist+ " - "+this.props.element.lyric+" "+this.props.element.pic}</a>
         // </tr>
       // </table>
 
