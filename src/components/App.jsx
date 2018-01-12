@@ -7,7 +7,7 @@ import StoryTable from "./StoryTable"
 class Document_Root extends React.Component {
   render() {
     return(
-      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#E8E8E8',}}>
         <IntroBar/>
         <StoryTable api={this.props.api}/>
       </div>

@@ -12,12 +12,9 @@ class IntroBar extends React.Component {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '130% 15%',
       backgroundSize: '62% 210%',
-      borderRadius: '3px',
-      borderColor: 'red',
-      border: '3px solid black',
+      // borderRadius: '3px',
+      // border: '3px solid black',
       marginRight: 'auto',
-      // display: 'flex',
-      // flexDirection: 'column',
       padding: '0px',
       margin: '0px',
 
@@ -25,9 +22,9 @@ class IntroBar extends React.Component {
     let button1Style = {
       position: 'absolute',
       right: '110px',
-      border: '2px solid white',
+      border: '1px solid white',
       backgroundColor: 'transparent',
-      top: '30px',
+      top: '20px',
       color: 'white',
       fontSize: '14px',
       borderRadius: '100px',
@@ -36,9 +33,9 @@ class IntroBar extends React.Component {
     let button2Style = {
       position: 'absolute',
       right: '30px',
-      border: '2px solid white',
+      border: '1px solid white',
       backgroundColor: 'transparent',
-      top: '30px',
+      top: '20px',
       color: 'white',
       fontSize: '14px',
       borderRadius: '100px',
@@ -60,28 +57,12 @@ class IntroBar extends React.Component {
     let header1 = {
       color: 'white',
       textAlign: 'center',
-      fontSize: '48px'
+      fontSize: '48px',
+      fontWeight: 'bold'
     }
 
-    let navstyle1 = {
-      border: '1px solid #d3d3d3',
-      backgroundAttachment: 'fixed',
-      display: 'block',
-      fontFamily: 'serif bold',
-      display: 'inline',
-      backgroundColor: 'white',
-      padding: '14px 16px',
-      // border: '1px solid #d3d3d3',
-      fontSize: '18px',
-      // color: 'black',
-      background : 'url(https://image.flaticon.com/icons/png/128/49/49116.png)',
-      // fontFamily: "edgeicons",
-      backgroundColor: 'white',
-      backgroundSize: '30% 40%',
-      color: 'transparent',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: '50% 50%',
-
+    let glass = {
+      height: '100%'
     }
     let navstyle = {
       backgroundAttachment: 'fixed',
@@ -96,6 +77,26 @@ class IntroBar extends React.Component {
       color: 'black',
       textDecoration: 'none',
       flex: 1,
+      textAlign: 'center',
+      // display: 'flex',
+      // flexFlow: 'row wrap',
+      // justifyContent: 'space-around',
+      // flexDirection: 'column',
+    }
+    let navstyle2 = {
+      backgroundAttachment: 'fixed',
+      display: 'block',
+      fontFamily: 'Helvetica Neue',
+      display: 'inline',
+      backgroundColor: 'white',
+      padding: '14px 16px',
+      border: '1px solid #d3d3d3',
+      fontSize: '18px',
+      fontWeight: 'bold',
+      color: '#87CEEB',
+      textDecoration: 'none',
+      flex: 1,
+      textAlign: 'center',
       // display: 'flex',
       // flexFlow: 'row wrap',
       // justifyContent: 'space-around',
@@ -103,13 +104,9 @@ class IntroBar extends React.Component {
     }
 
     let navBar = {
-      // backgroundColor: 'green',
       justifyContent: 'space-evenly',
-      // padding: '15px 0px',
       margin: '0',
       display: 'flex',
-
-
     }
 
     let linkedIn = {
@@ -129,22 +126,22 @@ class IntroBar extends React.Component {
     return (
       <div>
         <div style={mainContainer} >
-          <button type="button" style={button1Style}>Signup</button>
-          <button type="button" style={button2Style}>Login</button>
+          <a type="button" style={button1Style} href='https://twitter.com/'>Signup</a>
+          <a type="button" style={button2Style} href="https://twitter.com/">Login</a>
           <button style={bird}></button>
           <br/>
           <h1 style={header1}>What's happening?</h1>
         </div>
 
         <div style={navBar}>
-            <a style={navstyle1} href="search" >Search</a>
-            <a style={navstyle} href="featured">Featured</a>
-            <a style={navstyle} href="sports">Sports</a>
-            <a style={navstyle} href="news">News</a>
-            <a style={navstyle} href="music">Music</a>
-            <a style={navstyle} href="entertainment">Entertainment</a>
-            <a style={navstyle} href="lifestyle">Lifestyle</a>
-            <a style={navstyle} href="more">More</a>
+            <a style={navstyle2} href="https://twitter.com/">Q</a>
+            <a style={navstyle} href="https://twitter.com/">Featured</a>
+            <a style={navstyle} href="https://twitter.com/">Sports</a>
+            <a style={navstyle} href="https://twitter.com/">News</a>
+            <a style={navstyle} href="https://twitter.com/">Music</a>
+            <a style={navstyle} href="https://twitter.com/">Entertainment</a>
+            <a style={navstyle} href="https://twitter.com/">Lifestyle</a>
+            <a style={navstyle} href="https://twitter.com/">More</a>
 
         </div>
 
