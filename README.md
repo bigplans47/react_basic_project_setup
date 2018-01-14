@@ -1,4 +1,4 @@
-This project remade a base version of Twitter, the social media site using React. The simulated tweets are power by a mock API in project folder src filename called index.jsx
+This project remade a base version of Twitter, the social media site using React. The simulated tweets are powered by a mock API in the project folder 'src' filename called index.jsx
 
 This program allows data to flow through components and get presented in the UI, there is also CSS styling used to get the sleek Twitter look
 
