@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Document_Root from "./components/App";
+import App from "./components/App";
 
 import { AppContainer } from 'react-hot-loader';
 
@@ -37,7 +37,7 @@ const render = (Component) => {
 
 if (module.hot) {
   ReactDOM.render(
-      <Document_Root api = {API_MOCKUP} />,
+      <App api = {API_MOCKUP} />,
     document.getElementById('react-app-root')
   );
 }

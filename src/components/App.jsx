@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import IntroBar from "./IntroBar";
 import StoryTable from "./StoryTable"
 
-class Document_Root extends React.Component {
+class App extends React.Component {
   render() {
     return(
       <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#E8E8E8',}}>
@@ -15,7 +15,7 @@ class Document_Root extends React.Component {
   }
 }
 
-export default Document_Root;
+export default App;
 //--------------------------------------------------------this done
 // class FilterableProductTables extends React.Component {
 //   render() {

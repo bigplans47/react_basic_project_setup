@@ -28,9 +28,30 @@ class StoryCell extends React.Component {
     }
     let picFormat2 = {
       borderRadius: '1px',
-      width: '100%',
+      width: '5%',
       height: '20px',
       borderRadius: '5px 5px 0px 0px',
+    }
+    let picFormat3 = {
+      borderRadius: '1px',
+      width: '5%',
+      textAlign: 'center',
+      height: '15px',
+      borderRadius: '1px 1px 0px 0px',
+    }
+    let picFormat4 = {
+      borderRadius: '1px',
+      width: '5%',
+      textAlign: 'center',
+      height: '15px',
+      borderRadius: '1px 1px 0px 0px',
+    }
+    let picFormat5 = {
+      borderRadius: '1px',
+      width: '10%',
+      textAlign: 'center',
+      height: '15px',
+      borderRadius: '1px 1px 0px 0px',
     }
     let textFormat1 = {
       padding: '5px',
@@ -61,7 +82,20 @@ class StoryCell extends React.Component {
         <img src={this.props.element.pic} style={picFormat}/>
         <p style={textFormat1}>{this.props.element.artist}</p>
         <p style={textFormat2}>@{this.props.element.artist}</p>
-        <p style={textFormat3}>{this.props.element.lyric}<img src="https://visualpharm.com/assets/468/Retweet-595b40b75ba036ed117d89c5.svg" style={picFormat2} href='https://twitter.com/'/></p>
+        <p style={textFormat3}>{this.props.element.lyric}</p>
+        <p>
+          <img src="" style={picFormat5} href='https://twitter.com/'/>
+          <img src="" style={picFormat5} href='https://twitter.com/'/>
+          <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/51904-200.png" style={picFormat3} href='https://twitter.com/'/>
+          <img src="" style={picFormat5} href='https://twitter.com/'/>
+          <img src="" style={picFormat5} href='https://twitter.com/'/>
+          <img src="https://image.flaticon.com/icons/png/128/127/127998.png" style={picFormat2} href='https://twitter.com/'/>
+          <img src="" style={picFormat5} href='https://twitter.com/'/>
+          <img src="" style={picFormat5} href='https://twitter.com/'/>
+          <img src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/39.Heart-512.png" style={picFormat4} href='https://twitter.com/'/>
+          {/* <img src="https://pbs.twimg.com/profile_images/629054758465056768/_n31pMdK.jpg" style={picFormat4} href='https://twitter.com/'/> */}
+        </p>
+
       </a>
     );
   }
