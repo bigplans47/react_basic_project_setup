@@ -33,7 +33,6 @@ const render = (Component) => {
   );
 };
 
-// render(Document_Root);
 
 if (module.hot) {
   ReactDOM.render(

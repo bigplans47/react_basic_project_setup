@@ -3,10 +3,25 @@ import ReactDOM from "react-dom";
 
 
 class StoryCell extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      liked: false,
+      pic: "https://cdn4.iconfinder.com/data/icons/48-bubbles/48/39.Heart-512.png",
+    };
+    this.handleLiking=this.handleLiking.bind(this);
+  }
+
+
+
+  handleLiking(){
+    this.setState({liked: true});
+    this.setState({pic: "https://pbs.twimg.com/profile_images/629054758465056768/_n31pMdK.jpg"})
+    console.log(this.state);
+  }
+
   render() {
     var mypic = this.props.element.pic;
-    console.log(mypic);
-    // style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}
     let anchorButton = {
       margin: '10px',
       width: '30%',
@@ -77,8 +92,10 @@ class StoryCell extends React.Component {
       borderLeft: '2px solid white',
       borderBottom: '2px solid white',
     }
+
     return(
-      <a style={anchorButton} href='https://twitter.com/'>
+      <a style={anchorButton} >
+      {/* <a style={anchorButton} > */}
         <img src={this.props.element.pic} style={picFormat}/>
         <p style={textFormat1}>{this.props.element.artist}</p>
         <p style={textFormat2}>@{this.props.element.artist}</p>
@@ -92,7 +109,7 @@ class StoryCell extends React.Component {
           <img src="https://image.flaticon.com/icons/png/128/127/127998.png" style={picFormat2} href='https://twitter.com/'/>
           <img src="" style={picFormat5} href='https://twitter.com/'/>
           <img src="" style={picFormat5} href='https://twitter.com/'/>
-          <img src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/39.Heart-512.png" style={picFormat4} href='https://twitter.com/'/>
+          <img onClick={this.handleLiking}  src={this.state.pic} style={picFormat4}  />
           {/* <img src="https://pbs.twimg.com/profile_images/629054758465056768/_n31pMdK.jpg" style={picFormat4} href='https://twitter.com/'/> */}
         </p>
 
@@ -102,21 +119,3 @@ class StoryCell extends React.Component {
 }
 
 export default StoryCell;
-//-----------------------------------------
-// class ProductRow extends React.Component {
-//   render() {
-//     const product = this.props.product;
-//     const name = product.stocked ?
-//       product.name :
-//       <span style={{color: 'blue'}}>
-//         {product.name}
-//       </span>;
-//
-// return (
-//       <tr>
-//         <td>{name}</td>
-//         <td>{product.price}</td>
-//       </tr>
-//     );
-//   }
-// }

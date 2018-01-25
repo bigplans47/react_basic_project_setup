@@ -10,7 +10,7 @@ class StoryTable extends React.Component {
         <StoryCell element={element} key={i} />
       );
     });
-    console.log(array)
+    // console.log(array)
     return(
       // <table>
         <span>

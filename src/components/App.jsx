@@ -5,6 +5,7 @@ import IntroBar from "./IntroBar";
 import StoryTable from "./StoryTable"
 
 class App extends React.Component {
+
   render() {
     return(
       <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#E8E8E8',}}>
